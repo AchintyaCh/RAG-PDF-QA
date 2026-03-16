@@ -1,5 +1,5 @@
 PyPDF2
 sentence-transformers
-faiss-cpu
+qdrant-client
 numpy
 ollama
