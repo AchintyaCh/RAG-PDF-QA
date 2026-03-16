@@ -2,7 +2,7 @@
 
 A lightweight Retrieval-Augmented Generation (RAG) system that lets you load a PDF manual and ask natural‑language questions about it.
 
-The system extracts text from a PDF, splits it into chunks, stores semantic embeddings in a FAISS vector database, retrieves the most relevant passages, and uses a local LLM (via Ollama) to generate answers.
+The system extracts text from a PDF, splits it into chunks, stores semantic embeddings in a Qdrant vector database, retrieves the most relevant passages, and uses a local LLM (via Ollama) to generate answers.
 
 ---
 
@@ -10,7 +10,7 @@ The system extracts text from a PDF, splits it into chunks, stores semantic embe
 
 * Load and process PDF manuals
 * Semantic search using embeddings
-* Vector similarity retrieval with FAISS
+* Vector similarity retrieval
 * Local LLM answer generation using Ollama
 * Interactive CLI for asking questions
 
@@ -27,7 +27,7 @@ Chunking
       ↓
 Embeddings (SentenceTransformers)
       ↓
-FAISS Vector Database
+Vector Database
       ↓
 Retrieve Relevant Chunks
       ↓
